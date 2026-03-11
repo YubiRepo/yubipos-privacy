@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - Yubi POS</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f4f7f6; 
+        }
+        .container { 
+            background: #ffffff; 
+            padding: 50px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 20px;
+        }
+        h1 { 
+            color: #2c3e50; 
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+        h2 { 
+            color: #388e3c; /* Mengambil nuansa hijau dari logo kamu */
+            margin-top: 35px; 
+            font-size: 1.3rem;
+            border-left: 4px solid #d32f2f; /* Aksen merah dari logo */
+            padding-left: 15px;
+        }
+        p, li { 
+            margin-bottom: 15px; 
+            text-align: justify; 
+            color: #444;
+        }
+        ul { padding-left: 20px; }
+        .last-update {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        .footer { 
+            margin-top: 50px; 
+            text-align: center; 
+            font-size: 0.85rem; 
+            color: #95a5a6; 
+            border-top: 1px solid #eee; 
+            padding-top: 25px; 
+        }
+        .highlight { 
+            background: #fff3f3; 
+            color: #d32f2f;
+            padding: 2px 6px; 
+            border-radius: 4px; 
+            font-weight: 600; 
+        }
+        @media (max-width: 600px) {
+            .container { padding: 25px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="icon.png" alt="Yubi POS Logo" class="logo">
+        <h1>Kebijakan Privasi Yubi POS</h1>
+        <p class="last-update">Terakhir Diperbarui: 11 Maret 2026</p>
+    </div>
+
+    <p>Terima kasih telah memilih <strong>Yubi POS</strong> sebagai mitra manajemen bisnis Anda. Kami sangat menghargai kepercayaan Anda dan berkomitmen penuh untuk melindungi data pribadi pengguna serta data transaksi bisnis Anda.</p>
+
+    <h2>1. Informasi yang Kami Kumpulkan</h2>
+    <p>Untuk memberikan layanan Point of Sale yang optimal, kami mengumpulkan beberapa data berikut:</p>
+    <ul>
+        <li><strong>Informasi Pengguna:</strong> Nama lengkap, alamat email, dan <span class="highlight">nomor WhatsApp</span> yang digunakan untuk verifikasi akun dan identitas merchant.</li>
+        <li><strong>Data Transaksi:</strong> Informasi detail mengenai penjualan, stok barang, harga produk, dan kategori usaha yang Anda kelola melalui aplikasi.</li>
+        <li><strong>Data Pelanggan:</strong> Informasi nomor telepon pelanggan yang Anda masukkan secara sukarela untuk keperluan pengiriman struk digital.</li>
+        <li><strong>Log Perangkat:</strong> Informasi teknis seperti alamat IP, versi sistem operasi Android, dan model perangkat untuk meningkatkan stabilitas aplikasi Flutter kami.</li>
+    </ul>
+
+    <h2>2. Penggunaan Data Anda</h2>
+    <p>Kami hanya menggunakan data Anda untuk kepentingan fungsionalitas aplikasi, antara lain:</p>
+    <ul>
+        <li>Memproses registrasi dan login menggunakan sistem <span class="highlight">OTP WhatsApp</span>.</li>
+        <li>Mengelola operasional harian toko, termasuk pencatatan transaksi dan laporan keuangan.</li>
+        <li>Mengirimkan <span class="highlight">Digital Receipt (Struk Online)</span> langsung ke WhatsApp pelanggan Anda.</li>
+        <li>Menganalisis performa aplikasi guna memperbaiki bug atau kendala teknis lainnya.</li>
+    </ul>
+
+    <h2>2. Layanan Pihak Ketiga</h2>
+    <p>Yubi POS bekerja sama dengan penyedia layanan pihak ketiga untuk menjalankan fungsi spesifik:</p>
+    <ul>
+        <li><strong>Fonnte:</strong> Kami menggunakan API Fonnte sebagai pengirim (gateway) pesan WhatsApp. Data nomor tujuan akan diteruskan ke server Fonnte secara terenkripsi hanya saat pengiriman pesan dilakukan.</li>
+        <li><strong>Infrastructure:</strong> Data Anda disimpan secara aman pada layanan VPS (Virtual Private Server) yang berlokasi di pusat data Indonesia.</li>
+    </ul>
+
+    <h2>4. Keamanan Informasi</h2>
+    <p>Kami mengimplementasikan protokol keamanan <span class="highlight">SSL (Secure Sockets Layer)</span> untuk setiap komunikasi data antara aplikasi mobile dan server backend Laravel kami. Data sensitif seperti password disimpan menggunakan enkripsi satu arah yang tidak dapat dibaca kembali.</p>
+
+    <h2>5. Akses dan Izin Perangkat</h2>
+    <p>Aplikasi Yubi POS mungkin memerlukan beberapa izin pada perangkat Android Anda, seperti:</p>
+    <ul>
+        <li><strong>Internet:</strong> Untuk sinkronisasi data ke cloud server.</li>
+        <li><strong>Bluetooth:</strong> Untuk menghubungkan aplikasi dengan printer thermal struk (jika digunakan).</li>
+        <li><strong>Storage:</strong> Untuk menyimpan sementara laporan penjualan atau struk dalam format PDF sebelum dibagikan.</li>
+    </ul>
+
+    <h2>6. Penghapusan Data</h2>
+    <p>Anda memiliki hak penuh atas data Anda. Jika Anda memutuskan untuk berhenti menggunakan layanan kami, Anda dapat mengajukan permohonan penghapusan data akun dan seluruh data bisnis Anda dengan menghubungi layanan dukungan kami.</p>
+
+    <h2>7. Hubungi Kami</h2>
+    <p>Jika ada pertanyaan atau keluhan mengenai kebijakan privasi ini, Anda dapat menghubungi kami melalui:</p>
+    <p>
+        <strong>Nandang Eka Prasetya (Developer)</strong><br>
+        Email: <a href="mailto:support@yubipos.com">support@yubipos.com</a><br>
+        Lokasi: Indramayu, Jawa Barat, Indonesia
+    </p>
+
+    <div class="footer">
+        &copy; 2026 Yubi POS. Dikembangkan dengan ❤️ di Indonesia.
+    </div>
+</div>
+
+</body>
+</html>
